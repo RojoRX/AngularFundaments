@@ -1,0 +1,34 @@
+<header>
+    <div>
+        <h1>Perfil Usuario:</h1>
+        <span>{{value}}</span>
+    </div>
+    <button>
+        {{(value=="No identificado")? 'Iniciar sesion':'Cerrar Sesion' }}
+    </button>
+</header>
+<br><br>  
+<div>
+    <span>
+        {{(edad<=18)? "Edad no valida":"Edad valida"}}
+    </span>
+    <input type="text" name="" id="" [(ngModel)]="edad" (change)="statusButton()">
+    <button [disabled]="statusBoolean">Enable or Disable</button>
+</div> 
+<div [ngStyle]="{'background-color':'crimson', 'font-size':'2em'}">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptatem doloremque expedita a quod necessitatibus obcaecati, iusto illum! 
+        Quidem hic sed repellendus error expedita, tempore, sapiente accusantium ipsa consectetur suscipit odit.</p>
+</div>
+
+<div [ngClass]="statusBoolean? 'background':''">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptatem doloremque expedita a quod necessitatibus obcaecati</p>
+</div>
+
+<div *ngIf="itsTrue; else elseBlock">
+ <span>Contenido Desbloqueado!!</span>   
+</div>
+<ng-template #elseBlock>
+    <span>Este contenido esta Restringido</span>
+</ng-template>

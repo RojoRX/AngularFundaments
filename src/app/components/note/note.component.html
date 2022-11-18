@@ -1,0 +1,57 @@
+<p>note works!</p>
+<p>{{name}}</p>
+<!--<img [src]="enlace" alt="">-->
+<!--
+<button [disabled]="button">
+    Button
+</button>
+<button (click)="sayHello()">Saluda</button>
+<input (keypress)="showKeys()">
+<br>
+<input type="text" name="" id="" [(ngModel)]="namePerson">
+<span>{{namePerson}}</span>
+<br>
+<p [ngStyle]="{'background-color': 'red','font-size':'2em'}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Sint odit, quam qui sunt doloribus doloremque iusto debitis optio, totam aspernatur, sed consectetur? 
+    Facilis saepe quidem exercitationem perspiciatis cupiditate laboriosam nisi?</p>
+<p [ngClass]="activate ? 'background':''">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Sint, corrupti sed omnis quaerat sunt assumenda quae autem accusamus iste voluptate ab repudiandae ducimus accusantium cum officia! 
+    Quasi adipisci tempora facilis!
+</p>
+
+<button (click)="changeColor()">
+    Cambiar color
+</button>
+
+<br>
+<div *ngIf="ngifstate; else elseBlock">
+    <span>Contenido cargado!!!</span>
+</div>
+
+<ng-template #elseBlock>
+    <span>Cargando!!!!!</span>
+</ng-template>
+
+<div>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>Email</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of arrayObject">
+            <td>{{data.id}}</td>
+            <td>{{data.first_name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.gender}}</td>
+        </tr>
+    </tbody>
+</div>
+-->
+<span>
+    {{childMessage}}
+</span>
